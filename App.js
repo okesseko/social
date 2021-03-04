@@ -5,6 +5,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import Main from './component/main/main';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -32,13 +33,13 @@ const App = () => {
         backgroundColor="black"
         leftComponent={{icon: 'menu', color: '#fff'}}
         centerComponent={{text: 'MY TITLE', style: {color: '#fff'}}}
-        rightComponent={{icon: 'home', color: '#fff'}}
+        rightComponent={{icon: 'settings', color: '#fff',onPress:()=>{console.log('213')}}}
       />
       <NavigationContainer>
         <Tab.Navigator labeled={false} barStyle={{backgroundColor: 'black'}}>
           <Tab.Screen
             name="Home"
-            component={HomeScreen}
+            component={Main}
             options={{
               tabBarIcon: ({color}) => (
                 <MaterialCommunityIcons name="home" color={color} size={26} />
