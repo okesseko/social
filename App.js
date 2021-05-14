@@ -1,11 +1,13 @@
 import React from 'react';
-import {View, Text} from 'react-native';
+import {View, Text, TouchableOpacity} from 'react-native';
 import {ThemeProvider, Header} from 'react-native-elements';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
 import {createMaterialBottomTabNavigator} from '@react-navigation/material-bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Main from './component/main/main';
+import Search from './component/search/search';
+import Notification from './component/notification/notification';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -18,24 +20,37 @@ function HomeScreen() {
     </View>
   );
 }
-
-function SettingsScreen() {
+const LogoHeader = ({goToHome}) => {
   return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text>Settings!</Text>
-    </View>
+    <TouchableOpacity onPress={goToHome}>
+      <Text style={{color: '#fff', fontSize: 25}}>Jinstagram</Text>
+    </TouchableOpacity>
   );
-}
+};
+
 const App = () => {
+  const navigationRef = React.useRef(null);
   return (
     <ThemeProvider theme={theme}>
       <Header
         backgroundColor="black"
-        leftComponent={{icon: 'menu', color: '#fff'}}
-        centerComponent={{text: 'MY TITLE', style: {color: '#fff'}}}
-        rightComponent={{icon: 'settings', color: '#fff',onPress:()=>{console.log('213')}}}
+        centerComponent={
+          <LogoHeader
+            goToHome={() => {
+              navigationRef.current?.navigate('Home');
+            }}
+          />
+        }
+        // centerComponent={{text: 'MY TITLE', style: {color: '#fff'}}}
+        // rightComponent={{
+        //   icon: 'settings',
+        //   color: '#fff',
+        //   onPress: () => {
+        //     console.log('213');
+        //   },
+        // }}
       />
-      <NavigationContainer>
+      <NavigationContainer ref={navigationRef}>
         <Tab.Navigator labeled={false} barStyle={{backgroundColor: 'black'}}>
           <Tab.Screen
             name="Home"
@@ -48,7 +63,7 @@ const App = () => {
           />
           <Tab.Screen
             name="Search"
-            component={SettingsScreen}
+            component={Search}
             options={{
               tabBarIcon: ({color}) => (
                 <MaterialIcons name="search" color={color} size={26} />
@@ -57,7 +72,7 @@ const App = () => {
           />
           <Tab.Screen
             name="Notification"
-            component={HomeScreen}
+            component={Notification}
             options={{
               tabBarIcon: ({color}) => (
                 <MaterialCommunityIcons name="bell" color={color} size={26} />
