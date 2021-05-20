@@ -1330,6 +1330,14 @@
   "resolved" "https://registry.npm.taobao.org/@types/prop-types/download/@types/prop-types-15.7.3.tgz?cache=0&sync_timestamp=1613379899896&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Fprop-types%2Fdownload%2F%40types%2Fprop-types-15.7.3.tgz"
   "version" "15.7.3"
 
+"@types/react-native-snap-carousel@^3.8.3":
+  "integrity" "sha512-oAcURkSGLLBVeLDiBGBRURqmIHzdVA7EeZkgFLmXpYqdth31tIfLcAnkAlMTwOjo3Guh3ym9PgF8w4LsCE98ig=="
+  "resolved" "https://registry.npmjs.org/@types/react-native-snap-carousel/-/react-native-snap-carousel-3.8.3.tgz"
+  "version" "3.8.3"
+  dependencies:
+    "@types/react" "*"
+    "@types/react-native" "*"
+
 "@types/react-native-vector-icons@^6.4.6":
   "integrity" "sha1-hI47FFct71YhLK+/XLElS0Rb+0E="
   "resolved" "https://registry.npm.taobao.org/@types/react-native-vector-icons/download/@types/react-native-vector-icons-6.4.6.tgz"
@@ -2399,6 +2407,11 @@
     "browserslist" "^4.16.3"
     "semver" "7.0.0"
 
+"core-js@^1.0.0":
+  "integrity" "sha1-ZSKUwUZR2yj6k70tX/KYOk8IxjY="
+  "resolved" "https://registry.npmjs.org/core-js/-/core-js-1.2.7.tgz"
+  "version" "1.2.7"
+
 "core-js@^2.4.1":
   "integrity" "sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw="
   "resolved" "https://registry.npm.taobao.org/core-js/download/core-js-2.6.12.tgz"
@@ -3177,6 +3190,19 @@
     "plugin-error" "^0.1.2"
     "semver" "^5.1.0"
     "through2" "^2.0.0"
+
+"fbjs@^0.8.4":
+  "integrity" "sha1-xNWY6taUkRJlPWWIsBpc3Nn5D90="
+  "resolved" "https://registry.npmjs.org/fbjs/-/fbjs-0.8.17.tgz"
+  "version" "0.8.17"
+  dependencies:
+    "core-js" "^1.0.0"
+    "isomorphic-fetch" "^2.1.1"
+    "loose-envify" "^1.0.0"
+    "object-assign" "^4.1.0"
+    "promise" "^7.1.1"
+    "setimmediate" "^1.0.5"
+    "ua-parser-js" "^0.7.18"
 
 "fbjs@^1.0.0":
   "integrity" "sha1-UsIV4Ig6PIavKnp3btUVJa6OClo="
@@ -5841,7 +5867,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.6.1", "prop-types@^15.6.2", "prop-types@^15.7.2":
   "integrity" "sha1-UsQedbjIfnK52TYOAga5ncv/psU="
   "resolved" "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -5892,6 +5918,14 @@
   "integrity" "sha1-PPNwI9GZ4cJNGlW4SADC8+ZGgDE="
   "resolved" "https://registry.npm.taobao.org/range-parser/download/range-parser-1.2.1.tgz"
   "version" "1.2.1"
+
+"react-addons-shallow-compare@15.6.2":
+  "integrity" "sha1-GYoAuR/DdiPbZKKP0XtZa6NicC8="
+  "resolved" "https://registry.npmjs.org/react-addons-shallow-compare/-/react-addons-shallow-compare-15.6.2.tgz"
+  "version" "15.6.2"
+  dependencies:
+    "fbjs" "^0.8.4"
+    "object-assign" "^4.1.0"
 
 "react-devtools-core@^4.6.0":
   "integrity" "sha1-bVfbKRrqycxF75+0Y23Sq5dJDa8="
@@ -5963,6 +5997,14 @@
   "resolved" "https://registry.npm.taobao.org/react-native-size-matters/download/react-native-size-matters-0.3.1.tgz"
   "version" "0.3.1"
 
+"react-native-snap-carousel@^3.9.1":
+  "integrity" "sha512-xWEGusacIgK1YaDXLi7Gao2+ISLoGPVEBR8fcMf4tOOJQufutlNwkoLu0l6B8Qgsrre0nTxoVZikRgGRDWlLaQ=="
+  "resolved" "https://registry.npmjs.org/react-native-snap-carousel/-/react-native-snap-carousel-3.9.1.tgz"
+  "version" "3.9.1"
+  dependencies:
+    "prop-types" "^15.6.1"
+    "react-addons-shallow-compare" "15.6.2"
+
 "react-native-vector-icons@*", "react-native-vector-icons@^8.1.0", "react-native-vector-icons@>= 6.0.0", "react-native-vector-icons@>7.0.0":
   "integrity" "sha1-6O4rF7xNn2Ntocb2f+7o4qhQw9g="
   "resolved" "https://registry.npm.taobao.org/react-native-vector-icons/download/react-native-vector-icons-8.1.0.tgz"
@@ -6025,7 +6067,7 @@
     "react-is" "^16.8.6"
     "scheduler" "^0.19.1"
 
-"react@*", "react@^16.13.1", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@16.13.1":
+"react@*", "react@^16.13.1", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@>=15.0.0", "react@16.13.1":
   "integrity" "sha1-LoGIIvGpdDEiwGPWQQ2FweOv5I4="
   "resolved" "https://registry.npm.taobao.org/react/download/react-16.13.1.tgz"
   "version" "16.13.1"
