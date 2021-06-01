@@ -7,7 +7,7 @@ import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityI
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Main from './component/main/main';
 import Search from './component/search/search';
-import Notification from './component/notification/notification';
+import Profile from './component/profile/profile';
 
 const Tab = createMaterialBottomTabNavigator();
 
@@ -27,7 +27,6 @@ const LogoHeader = ({goToHome}) => {
     </TouchableOpacity>
   );
 };
-
 const App = () => {
   const navigationRef = React.useRef(null);
   return (
@@ -70,7 +69,7 @@ const App = () => {
               ),
             }}
           />
-          <Tab.Screen
+          {/* <Tab.Screen
             name="Notification"
             component={Notification}
             options={{
@@ -78,10 +77,10 @@ const App = () => {
                 <MaterialCommunityIcons name="bell" color={color} size={26} />
               ),
             }}
-          />
+          /> */}
           <Tab.Screen
             name="Profile"
-            component={HomeScreen}
+            component={Profile}
             options={{
               tabBarIcon: ({color}) => (
                 <MaterialCommunityIcons
@@ -90,8 +89,9 @@ const App = () => {
                   size={26}
                 />
               ),
-            }}
-          />
+            }}/>
+            {/* {(props) => <Profile {...props} />}
+          </Tab.Screen> */}
         </Tab.Navigator>
       </NavigationContainer>
     </ThemeProvider>

@@ -1,9 +1,12 @@
 import React, {useCallback, useRef, useState} from 'react';
-import {ScrollView, StyleSheet, View} from 'react-native';
+import {Platform, ScrollView, StyleSheet, View} from 'react-native';
 import {Avatar, Icon, Image, Text} from 'react-native-elements';
 import Carousel, {Pagination} from 'react-native-snap-carousel';
+import Share from 'react-native-share';
 import {Dimensions} from 'react-native';
 import Comment from './comment';
+import { useNavigation } from '@react-navigation/native';
+
 const windowWidth = Dimensions.get('window').width;
 interface propType {
   userName: string;
@@ -14,7 +17,9 @@ interface propType {
     name: string;
     avatarUrl: string;
     content: string;
+    index:number
   }[];
+  index:number
 }
 const styles = StyleSheet.create({
   avatar: {
@@ -34,6 +39,7 @@ const Post = ({
   postImage,
   postContent,
   postComment,
+  index
 }: propType) => {
   const [activeIndex, setActiveIndex] = useState<number>(0);
   const [iconState, setIconState] = useState(false);
@@ -41,6 +47,7 @@ const Post = ({
   const [showMore, setShowMore] = useState(true);
   const [isComment, setIsComment] = useState(false);
   const ref = useRef(null);
+  const navigation = useNavigation();
   const renderItem = useCallback(({item}) => {
     return (
       <Image
@@ -60,6 +67,7 @@ const Post = ({
           source={{
             uri: avatarURL,
           }}
+          onPress={()=>{navigation.navigate('Profile',{profileIndex:index})}}
         />
         <Text style={{color: 'white', marginLeft: 10}} h4>
           {userName}
@@ -116,6 +124,18 @@ const Post = ({
           name="message1"
         />
         <Icon
+          onPress={() => {
+            Share.open({
+              title: 'Share this post',
+              message: postContent,
+            })
+              .then((res) => {
+                console.log(res);
+              })
+              .catch((err) => {
+                err && console.log(err);
+              });
+          }}
           color="white"
           size={30}
           style={{marginHorizontal: 8}}
@@ -124,7 +144,9 @@ const Post = ({
         />
       </View>
       <View style={{marginLeft: 12, marginRight: 0, marginTop: 4}}>
-        <Text style={{color: 'white'}}>99,999 views</Text>
+        <Text style={{color: 'white'}}>
+          {iconState ? '1,000,000' : '999,999'} likes
+        </Text>
         {isTruncatedText ? (
           <>
             <Text style={styles.text} numberOfLines={showMore ? 3 : 0}>
@@ -141,7 +163,6 @@ const Post = ({
             style={styles.text}
             onTextLayout={(event) => {
               const {lines} = event.nativeEvent;
-              console.log(lines.length);
               setIsTruncatedText(lines?.length > 3);
             }}>
             {postContent}

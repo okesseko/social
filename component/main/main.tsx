@@ -8,7 +8,7 @@ import Story from './story';
 const Main = () => {
   const [data, setData] = useState(postArray);
   return (
-    <SafeAreaView style={{backgroundColor: 'black'}}>
+    <SafeAreaView style={{backgroundColor: 'black', flex: 1}}>
       <ScrollView>
         <Story />
         {data.map((post, index) => (

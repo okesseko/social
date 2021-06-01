@@ -78,7 +78,7 @@ const Notification = () => {
               size="medium"
               source={{
                 uri:
-                'https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.6435-1/p100x100/140685392_3774528982605442_732156108914020243_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=7206a8&_nc_ohc=NdfPZqSw3csAX8hBO6-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.ftpe7-3.fna&tp=6&oh=b1f0cc3dd9430d9347b861a3f40421ec&oe=60A38F36',
+                'https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.6435-1/p480x480/140685392_3774528982605442_732156108914020243_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=7206a8&_nc_ohc=4VfDSRbCFOUAX8YVcwP&_nc_ht=scontent.ftpe7-3.fna&tp=6&oh=e5e914610cd1741ede64ce3d4eec8755&oe=60DB19FB',
               }}
             />
             <Text style={{color: 'white', marginLeft: 10}} h4>
@@ -88,7 +88,7 @@ const Notification = () => {
           <Image
             source={{
               uri:
-                'https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.6435-1/p100x100/140685392_3774528982605442_732156108914020243_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=7206a8&_nc_ohc=NdfPZqSw3csAX8hBO6-&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent.ftpe7-3.fna&tp=6&oh=b1f0cc3dd9430d9347b861a3f40421ec&oe=60A38F36',
+                'https://scontent.ftpe7-3.fna.fbcdn.net/v/t1.6435-1/p480x480/140685392_3774528982605442_732156108914020243_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=7206a8&_nc_ohc=4VfDSRbCFOUAX8YVcwP&_nc_ht=scontent.ftpe7-3.fna&tp=6&oh=e5e914610cd1741ede64ce3d4eec8755&oe=60DB19FB',
             }}
             style={{width: 50, height: 50}}
           />

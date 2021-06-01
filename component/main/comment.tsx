@@ -9,6 +9,7 @@ interface propType {
     name: string;
     avatarUrl: string;
     content: string;
+    index: number;
   }[];
 }
 const PersonComment = ({
@@ -18,6 +19,7 @@ const PersonComment = ({
     name: string;
     avatarUrl: string;
     content: string;
+    index: number;
   };
 }) => {
   return (
@@ -62,15 +64,17 @@ const Comment = ({comment, isComment, setIsComment}: propType) => {
           style={{color: 'white'}}
           onBlur={() => {
             setIsComment(false);
-            setNewComment([
-              {
-                name: 'orange',
-                avatarUrl:
-                  'https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.6435-9/118799020_3250741855002298_936179572545433075_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Vp3ucZlOG1IAX-U1G1C&_nc_ht=scontent.ftpe7-1.fna&oh=4b81768032f04e62a8cc2a44ef0f4890&oe=60A36D93',
-                content: value,
-              },
-              ...newComment,
-            ]);
+            if (value)
+              setNewComment([
+                {
+                  name: 'Hi_Orange',
+                  avatarUrl:
+                    'https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.6435-9/118799020_3250741855002298_936179572545433075_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=uzNyFxP2pw0AX9QnJVc&tn=mLkOsPvSgpcTaJe2&_nc_ht=scontent.ftpe7-1.fna&oh=c18d639f466f34a71a2909cd2f7691f1&oe=60D2E393',
+                  content: value,
+                  index:1
+                },
+                ...newComment,
+              ]);
           }}
           onChangeText={(text) => setValue(text)}
           leftIcon={
@@ -78,13 +82,13 @@ const Comment = ({comment, isComment, setIsComment}: propType) => {
               rounded
               source={{
                 uri:
-                  'https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.6435-9/118799020_3250741855002298_936179572545433075_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=Vp3ucZlOG1IAX-U1G1C&_nc_ht=scontent.ftpe7-1.fna&oh=4b81768032f04e62a8cc2a44ef0f4890&oe=60A36D93',
+                  'https://scontent.ftpe7-1.fna.fbcdn.net/v/t1.6435-9/118799020_3250741855002298_936179572545433075_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=uzNyFxP2pw0AX9QnJVc&tn=mLkOsPvSgpcTaJe2&_nc_ht=scontent.ftpe7-1.fna&oh=c18d639f466f34a71a2909cd2f7691f1&oe=60D2E393',
               }}
             />
           }
         />
       )}
-      {isShowAll && newComment?.map((item) => <PersonComment comment={item} />)}
+      {isShowAll && newComment?.map((item,index) => <PersonComment key={index} comment={item} />)}
     </View>
   );
 };
