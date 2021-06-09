@@ -1052,7 +1052,7 @@
     "hermes-profile-transformer" "^0.0.6"
     "ip" "^1.1.5"
 
-"@react-native-community/cli-platform-android@^4.10.0", "@react-native-community/cli-platform-android@^4.13.0", "@react-native-community/cli-platform-android@^4.5.1":
+"@react-native-community/cli-platform-android@^4.10.0", "@react-native-community/cli-platform-android@^4.13.0":
   "integrity" "sha1-kiaB7ILuGq3Zk1mLgU3xFSEYvgI="
   "resolved" "https://registry.npm.taobao.org/@react-native-community/cli-platform-android/download/@react-native-community/cli-platform-android-4.13.0.tgz"
   "version" "4.13.0"
@@ -1068,7 +1068,7 @@
     "slash" "^3.0.0"
     "xmldoc" "^1.1.2"
 
-"@react-native-community/cli-platform-ios@^4.10.0", "@react-native-community/cli-platform-ios@^4.5.0":
+"@react-native-community/cli-platform-ios@^4.10.0":
   "integrity" "sha1-pziRXGjKyG31TleLWaExHqYrGu8="
   "resolved" "https://registry.npm.taobao.org/@react-native-community/cli-platform-ios/download/@react-native-community/cli-platform-ios-4.13.0.tgz"
   "version" "4.13.0"
@@ -1113,7 +1113,7 @@
   "resolved" "https://registry.npm.taobao.org/@react-native-community/cli-types/download/@react-native-community/cli-types-4.10.1.tgz"
   "version" "4.10.1"
 
-"@react-native-community/cli@^4.10.0", "@react-native-community/cli@^4.5.1":
+"@react-native-community/cli@^4.10.0":
   "integrity" "sha1-uxBqmDQb+i2zYGAJH/kL/oLqT1U="
   "resolved" "https://registry.npm.taobao.org/@react-native-community/cli/download/@react-native-community/cli-4.14.0.tgz"
   "version" "4.14.0"
@@ -1178,7 +1178,7 @@
   "resolved" "https://registry.npm.taobao.org/@react-native-community/eslint-plugin/download/@react-native-community/eslint-plugin-1.1.0.tgz"
   "version" "1.1.0"
 
-"@react-native-community/toolbar-android@^0.1.0-rc.1", "@react-native-community/toolbar-android@^0.1.0-rc.2":
+"@react-native-community/toolbar-android@^0.1.0-rc.2":
   "integrity" "sha512-UCblqsitOcoYxVc6QzcaqCKogeRnePPMw7cbGvW5GI/GXIwQel8Kge9d910W3MUPUzw3pFzhIZVug6U3W067Pg=="
   "resolved" "https://registry.npmjs.org/@react-native-community/toolbar-android/-/toolbar-android-0.1.0-rc.2.tgz"
   "version" "0.1.0-rc.2"
@@ -2285,7 +2285,7 @@
 
 "color-name@1.1.3":
   "integrity" "sha1-p9BVi9icQveV3UIyj3QIMcpTvCU="
-  "resolved" "https://registry.npmjs.org/color-name/-/color-name-1.1.3.tgz"
+  "resolved" "https://registry.npm.taobao.org/color-name/download/color-name-1.1.3.tgz"
   "version" "1.1.3"
 
 "color-string@^1.5.4":
@@ -2416,7 +2416,7 @@
   "resolved" "https://registry.npmjs.org/core-js/-/core-js-1.2.7.tgz"
   "version" "1.2.7"
 
-"core-js@^2.2.2", "core-js@^2.4.1":
+"core-js@^2.4.1":
   "integrity" "sha1-2TM9+nsGXjR8xWgiGdb2kIWcwuw="
   "resolved" "https://registry.npm.taobao.org/core-js/download/core-js-2.6.12.tgz"
   "version" "2.6.12"
@@ -2435,14 +2435,6 @@
     "is-directory" "^0.3.1"
     "js-yaml" "^3.13.1"
     "parse-json" "^4.0.0"
-
-"create-react-class@^15.6.0", "create-react-class@^15.6.3":
-  "integrity" "sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng=="
-  "resolved" "https://registry.npmjs.org/create-react-class/-/create-react-class-15.7.0.tgz"
-  "version" "15.7.0"
-  dependencies:
-    "loose-envify" "^1.3.1"
-    "object-assign" "^4.1.1"
 
 "cross-spawn@^5.1.0":
   "integrity" "sha1-6L0O/uWPz/b4+UUQoKVUu/ojVEk="
@@ -2891,13 +2883,6 @@
     "prop-types" "^15.7.2"
     "resolve" "^1.18.1"
     "string.prototype.matchall" "^4.0.2"
-
-"eslint-plugin-relay@1.4.1":
-  "integrity" "sha512-yb+p+4AxZTi2gXN7cZRfXMBFlRa5j6TtiVeq3yHXyy+tlgYNpxi/dDrP1+tcUTNP9vdaJovnfGZ5jp6kMiH9eg=="
-  "resolved" "https://registry.npmjs.org/eslint-plugin-relay/-/eslint-plugin-relay-1.4.1.tgz"
-  "version" "1.4.1"
-  dependencies:
-    "graphql" "^14.0.0"
 
 "eslint-scope@^5.0.0", "eslint-scope@^5.1.1":
   "integrity" "sha1-54blmmbLkrP2wfsNUIqrF0hI9Iw="
@@ -3505,13 +3490,6 @@
   "resolved" "https://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.2.6.tgz?cache=0&sync_timestamp=1612893637484&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fgraceful-fs%2Fdownload%2Fgraceful-fs-4.2.6.tgz"
   "version" "4.2.6"
 
-"graphql@^14.0.0":
-  "integrity" "sha512-l0xWZpoPKpppFzMfvVyFmp9vLN7w/ZZJPefUicMCepfJeQ8sMcztloGYY9DfjVPo6tIUDzU5Hw3MUbIjj9AVVA=="
-  "resolved" "https://registry.npmjs.org/graphql/-/graphql-14.7.0.tgz"
-  "version" "14.7.0"
-  dependencies:
-    "iterall" "^1.2.2"
-
 "growly@^1.3.0":
   "integrity" "sha1-8QdIy+dq+WS3yWyTxrzCivEgwIE="
   "resolved" "https://registry.npm.taobao.org/growly/download/growly-1.3.0.tgz"
@@ -3582,11 +3560,6 @@
   "version" "1.0.3"
   dependencies:
     "function-bind" "^1.1.1"
-
-"hermes-engine@~0.4.0":
-  "integrity" "sha512-qkk85ezG+w70C3tQ4iDs22B8talvByGeJQ1VIb2KG5+rMZWVizRq6r+NYptOC/HWAFxkdYb6F3OPca7RxvjYew=="
-  "resolved" "https://registry.npmjs.org/hermes-engine/-/hermes-engine-0.4.3.tgz"
-  "version" "0.4.3"
 
 "hermes-engine@~0.5.0":
   "integrity" "sha1-YBEV5LHgoX2aqRJDuWJ33k6Sbgk="
@@ -4056,11 +4029,6 @@
   dependencies:
     "html-escaper" "^2.0.0"
     "istanbul-lib-report" "^3.0.0"
-
-"iterall@^1.2.2":
-  "integrity" "sha512-QZ9qOMdF+QLHxy1QIpUHUU1D5pS2CG2P69LF6L6CPjPYA/XMOmKV3PZpawHoAjHNyB0swdVTRxdYT4tbBbxqwg=="
-  "resolved" "https://registry.npmjs.org/iterall/-/iterall-1.3.0.tgz"
-  "version" "1.3.0"
 
 "jest-changed-files@^26.6.2":
   "integrity" "sha1-9hmEeeHMZvIvmuHiKsqgtCnAQtA="
@@ -4852,7 +4820,7 @@
     "dayjs" "^1.8.15"
     "yargs" "^15.1.0"
 
-"loose-envify@^1.0.0", "loose-envify@^1.1.0", "loose-envify@^1.3.1", "loose-envify@^1.4.0":
+"loose-envify@^1.0.0", "loose-envify@^1.1.0", "loose-envify@^1.4.0":
   "integrity" "sha1-ce5R+nvkyuwaY4OffmgtgTLTDK8="
   "resolved" "https://registry.npm.taobao.org/loose-envify/download/loose-envify-1.4.0.tgz"
   "version" "1.4.0"
@@ -4920,24 +4888,6 @@
   "resolved" "https://registry.npm.taobao.org/merge-stream/download/merge-stream-2.0.0.tgz"
   "version" "2.0.0"
 
-"metro-babel-register@0.58.0":
-  "integrity" "sha512-P5+G3ufhSYL6cA3a7xkbSJzzFBvtivj/PhWvGXFXnuFssDlMAX1CTktff+0gpka5Cd6B6QLt0UAMWulUAAE4Eg=="
-  "resolved" "https://registry.npmjs.org/metro-babel-register/-/metro-babel-register-0.58.0.tgz"
-  "version" "0.58.0"
-  dependencies:
-    "@babel/core" "^7.0.0"
-    "@babel/plugin-proposal-class-properties" "^7.0.0"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.0.0"
-    "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
-    "@babel/plugin-proposal-optional-catch-binding" "^7.0.0"
-    "@babel/plugin-proposal-optional-chaining" "^7.0.0"
-    "@babel/plugin-transform-async-to-generator" "^7.0.0"
-    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
-    "@babel/plugin-transform-modules-commonjs" "^7.0.0"
-    "@babel/register" "^7.0.0"
-    "core-js" "^2.2.2"
-    "escape-string-regexp" "^1.0.5"
-
 "metro-babel-register@0.59.0":
   "integrity" "sha1-K8/2VkGzZ5TPCDunMvvEbPhw+0M="
   "resolved" "https://registry.npm.taobao.org/metro-babel-register/download/metro-babel-register-0.59.0.tgz?cache=0&sync_timestamp=1613407007964&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fmetro-babel-register%2Fdownload%2Fmetro-babel-register-0.59.0.tgz"
@@ -4951,14 +4901,6 @@
     "@babel/plugin-transform-modules-commonjs" "^7.0.0"
     "@babel/register" "^7.0.0"
     "escape-string-regexp" "^1.0.5"
-
-"metro-babel-transformer@0.58.0":
-  "integrity" "sha512-yBX3BkRhw2TCNPhe+pmLSgsAEA3huMvnX08UwjFqSXXI1aiqzRQobn92uKd1U5MM1Vx8EtXVomlJb95ZHNAv6A=="
-  "resolved" "https://registry.npmjs.org/metro-babel-transformer/-/metro-babel-transformer-0.58.0.tgz"
-  "version" "0.58.0"
-  dependencies:
-    "@babel/core" "^7.0.0"
-    "metro-source-map" "0.58.0"
 
 "metro-babel-transformer@0.59.0":
   "integrity" "sha1-3amcddgxsAFCxCwCDFHBA7KfGZ0="
@@ -5062,47 +5004,6 @@
     "@babel/template" "^7.0.0"
     "react-refresh" "^0.4.0"
 
-"metro-react-native-babel-preset@0.58.0":
-  "integrity" "sha512-MRriNW+fF6jxABsgPphocUY6mIhmCm8idcrQZ58fT3Iti2vCdtkaK32TyCGUNUptzhUe2/cbE57j4aC+eaodAA=="
-  "resolved" "https://registry.npmjs.org/metro-react-native-babel-preset/-/metro-react-native-babel-preset-0.58.0.tgz"
-  "version" "0.58.0"
-  dependencies:
-    "@babel/plugin-proposal-class-properties" "^7.0.0"
-    "@babel/plugin-proposal-export-default-from" "^7.0.0"
-    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.0.0"
-    "@babel/plugin-proposal-object-rest-spread" "^7.0.0"
-    "@babel/plugin-proposal-optional-catch-binding" "^7.0.0"
-    "@babel/plugin-proposal-optional-chaining" "^7.0.0"
-    "@babel/plugin-syntax-dynamic-import" "^7.0.0"
-    "@babel/plugin-syntax-export-default-from" "^7.0.0"
-    "@babel/plugin-syntax-flow" "^7.2.0"
-    "@babel/plugin-transform-arrow-functions" "^7.0.0"
-    "@babel/plugin-transform-block-scoping" "^7.0.0"
-    "@babel/plugin-transform-classes" "^7.0.0"
-    "@babel/plugin-transform-computed-properties" "^7.0.0"
-    "@babel/plugin-transform-destructuring" "^7.0.0"
-    "@babel/plugin-transform-exponentiation-operator" "^7.0.0"
-    "@babel/plugin-transform-flow-strip-types" "^7.0.0"
-    "@babel/plugin-transform-for-of" "^7.0.0"
-    "@babel/plugin-transform-function-name" "^7.0.0"
-    "@babel/plugin-transform-literals" "^7.0.0"
-    "@babel/plugin-transform-modules-commonjs" "^7.0.0"
-    "@babel/plugin-transform-object-assign" "^7.0.0"
-    "@babel/plugin-transform-parameters" "^7.0.0"
-    "@babel/plugin-transform-react-display-name" "^7.0.0"
-    "@babel/plugin-transform-react-jsx" "^7.0.0"
-    "@babel/plugin-transform-react-jsx-source" "^7.0.0"
-    "@babel/plugin-transform-regenerator" "^7.0.0"
-    "@babel/plugin-transform-runtime" "^7.0.0"
-    "@babel/plugin-transform-shorthand-properties" "^7.0.0"
-    "@babel/plugin-transform-spread" "^7.0.0"
-    "@babel/plugin-transform-sticky-regex" "^7.0.0"
-    "@babel/plugin-transform-template-literals" "^7.0.0"
-    "@babel/plugin-transform-typescript" "^7.5.0"
-    "@babel/plugin-transform-unicode-regex" "^7.0.0"
-    "@babel/template" "^7.0.0"
-    "react-refresh" "^0.4.0"
-
 "metro-react-native-babel-preset@0.59.0":
   "integrity" "sha1-IOAgvGrJhJ4Ud94TM9MD7UKroiU="
   "resolved" "https://registry.npm.taobao.org/metro-react-native-babel-preset/download/metro-react-native-babel-preset-0.59.0.tgz"
@@ -5158,36 +5059,12 @@
     "metro-react-native-babel-preset" "0.59.0"
     "metro-source-map" "0.59.0"
 
-"metro-react-native-babel-transformer@0.58.0":
-  "integrity" "sha512-3A73+cRq1eUPQ8g+hPNGgMUMCGmtQjwqHfoG1DwinAoJ/kr4WOXWWbGZo0xHJNBe/zdHGl0uHcDCp2knPglTdQ=="
-  "resolved" "https://registry.npmjs.org/metro-react-native-babel-transformer/-/metro-react-native-babel-transformer-0.58.0.tgz"
-  "version" "0.58.0"
-  dependencies:
-    "@babel/core" "^7.0.0"
-    "babel-preset-fbjs" "^3.3.0"
-    "metro-babel-transformer" "0.58.0"
-    "metro-react-native-babel-preset" "0.58.0"
-    "metro-source-map" "0.58.0"
-
 "metro-resolver@^0.59.0", "metro-resolver@0.59.0":
   "integrity" "sha1-+8nXyV8JTFKAeHfQAR/v+56Jb60="
   "resolved" "https://registry.npm.taobao.org/metro-resolver/download/metro-resolver-0.59.0.tgz"
   "version" "0.59.0"
   dependencies:
     "absolute-path" "^0.0.0"
-
-"metro-source-map@0.58.0":
-  "integrity" "sha512-yvN1YPmejmgiiS7T1aKBiiUTHPw2Vcm3r2TZ+DY92z/9PR4alysIywrCs/fTHs8rbDcKM5VfPCKGLpkBrbKeOw=="
-  "resolved" "https://registry.npmjs.org/metro-source-map/-/metro-source-map-0.58.0.tgz"
-  "version" "0.58.0"
-  dependencies:
-    "@babel/traverse" "^7.0.0"
-    "@babel/types" "^7.0.0"
-    "invariant" "^2.2.4"
-    "metro-symbolicate" "0.58.0"
-    "ob1" "0.58.0"
-    "source-map" "^0.5.6"
-    "vlq" "^1.0.0"
 
 "metro-source-map@0.59.0":
   "integrity" "sha1-6b65/FG/tOBg+VggzxUI/BItI/c="
@@ -5200,17 +5077,6 @@
     "metro-symbolicate" "0.59.0"
     "ob1" "0.59.0"
     "source-map" "^0.5.6"
-    "vlq" "^1.0.0"
-
-"metro-symbolicate@0.58.0":
-  "integrity" "sha512-uIVxUQC1E26qOMj13dKROhwAa2FmZk5eR0NcBqej/aXmQhpr8LjJg2sondkoLKUp827Tf/Fm9+pS4icb5XiqCw=="
-  "resolved" "https://registry.npmjs.org/metro-symbolicate/-/metro-symbolicate-0.58.0.tgz"
-  "version" "0.58.0"
-  dependencies:
-    "invariant" "^2.2.4"
-    "metro-source-map" "0.58.0"
-    "source-map" "^0.5.6"
-    "through2" "^2.0.1"
     "vlq" "^1.0.0"
 
 "metro-symbolicate@0.59.0":
@@ -5565,11 +5431,6 @@
   "integrity" "sha1-R6ewFrqmi1+g7PPe4IqFxnmsZFU="
   "resolved" "https://registry.npm.taobao.org/oauth-sign/download/oauth-sign-0.9.0.tgz"
   "version" "0.9.0"
-
-"ob1@0.58.0":
-  "integrity" "sha512-uZP44cbowAfHafP1k4skpWItk5iHCoRevMfrnUvYCfyNNPPJd3rfDCyj0exklWi2gDXvjlj2ObsfiqP/bs/J7Q=="
-  "resolved" "https://registry.npmjs.org/ob1/-/ob1-0.58.0.tgz"
-  "version" "0.58.0"
 
 "ob1@0.59.0":
   "integrity" "sha1-7hA2Ge9ctpfyhm41d9pvDs1WWjY="
@@ -5944,16 +5805,6 @@
   "resolved" "https://registry.npm.taobao.org/prettier/download/prettier-2.2.1.tgz"
   "version" "2.2.1"
 
-"pretty-format@^24.7.0":
-  "integrity" "sha512-00ZMZUiHaJrNfk33guavqgvfJS30sLYf0f8+Srklv0AMPodGGHcoHgksZ3OThYnIvOd+8yMCn0YiEOogjlgsnA=="
-  "resolved" "https://registry.npmjs.org/pretty-format/-/pretty-format-24.9.0.tgz"
-  "version" "24.9.0"
-  dependencies:
-    "@jest/types" "^24.9.0"
-    "ansi-regex" "^4.0.0"
-    "ansi-styles" "^3.2.0"
-    "react-is" "^16.8.4"
-
 "pretty-format@^24.9.0":
   "integrity" "sha1-EvrDGzcBmk7qPBGqmpWet2KKp8k="
   "resolved" "https://registry.npm.taobao.org/pretty-format/download/pretty-format-24.9.0.tgz"
@@ -6086,7 +5937,7 @@
     "fbjs" "^0.8.4"
     "object-assign" "^4.1.0"
 
-"react-devtools-core@^4.0.6", "react-devtools-core@^4.6.0":
+"react-devtools-core@^4.6.0":
   "integrity" "sha1-bVfbKRrqycxF75+0Y23Sq5dJDa8="
   "resolved" "https://registry.npm.taobao.org/react-devtools-core/download/react-devtools-core-4.10.1.tgz"
   "version" "4.10.1"
@@ -6103,13 +5954,6 @@
   "integrity" "sha1-WzUxvXamRaTJ+25pPtNkGeMwEzk="
   "resolved" "https://registry.npm.taobao.org/react-is/download/react-is-17.0.1.tgz"
   "version" "17.0.1"
-
-"react-native-3dcube-navigation@^1.0.4":
-  "integrity" "sha512-9BGdJDcouWi8a/KqajCOm+gHayXfFhodq8G/mgSMp0363QyZAlP7iPtYjL6mkaUcR8JAjzgCREh4CHAAMJmnhw=="
-  "resolved" "https://registry.npmjs.org/react-native-3dcube-navigation/-/react-native-3dcube-navigation-1.0.4.tgz"
-  "version" "1.0.4"
-  dependencies:
-    "react" "^16.2.0"
 
 "react-native-clean-project@^3.6.4":
   "integrity" "sha512-bQij/EktcOb9VnEUg+UaC4bePWlGeqsLk0dyCJyQmHc4s1Cw7lo+cnnFVbuyFnjT0sEMSkDvDF0/rLD6437XMw=="
@@ -6140,14 +5984,6 @@
   "integrity" "sha1-IMYD6aDnZf1vlzlmOL3rDlpgsBA="
   "resolved" "https://registry.npm.taobao.org/react-native-iphone-x-helper/download/react-native-iphone-x-helper-1.3.1.tgz"
   "version" "1.3.1"
-
-"react-native-modalbox@^1.7.1":
-  "integrity" "sha512-Jqn12MKQaT5OSb1uMAEeDQF02xHS+WWdgKl55ecoIknrDy+FIoC3fXHMEoRZH6agADDg9eVBqx8w+P7+EwXTbQ=="
-  "resolved" "https://registry.npmjs.org/react-native-modalbox/-/react-native-modalbox-1.7.1.tgz"
-  "version" "1.7.1"
-  dependencies:
-    "create-react-class" "^15.6.0"
-    "prop-types" "^15.5.10"
 
 "react-native-modalbox@^2.0.2":
   "integrity" "sha512-uSuoZ+siPPNqWGyw8NXhA/Aots7mOx2+qijFoeovequY0kczZEPZDd0ARHbzg+1cE3H3AATJEwGdkVA8lUxs0g=="
@@ -6201,32 +6037,7 @@
     "prop-types" "^15.6.1"
     "react-addons-shallow-compare" "15.6.2"
 
-"react-native-stories-media@^0.0.7":
-  "integrity" "sha512-oWlEIQqDMZVb+WHDmYXvXWjc+Ebde9FqO+Ym7yC29Fqou2hjjPPmY9y61hjoOXAVId1L8CL7Lpv9p+oabVlIXQ=="
-  "resolved" "https://registry.npmjs.org/react-native-stories-media/-/react-native-stories-media-0.0.7.tgz"
-  "version" "0.0.7"
-  dependencies:
-    "react-native-3dcube-navigation" "^1.0.4"
-    "react-native-modalbox" "^1.7.1"
-    "react-native-swipe-gestures" "^1.0.3"
-    "react-native-vector-icons" "^6.6.0"
-    "react-native-video" "^5.1.0-alpha8"
-    "react-native-webview" "^10.9.3"
-
-"react-native-stories-view@^1.0.7":
-  "integrity" "sha512-ONY+bsR/luqTFuwgfgRKGOL1xXBghUv2od6zACyw/LBq7In/wz4t9DEIwcJ5DnA3guKgC7jNMFBVe8avzcr/Kg=="
-  "resolved" "https://registry.npmjs.org/react-native-stories-view/-/react-native-stories-view-1.0.7.tgz"
-  "version" "1.0.7"
-  dependencies:
-    "react" "16.11.0"
-    "react-native" "0.62.1"
-
-"react-native-story@^0.1.3":
-  "integrity" "sha512-C+qJWp3mD8ZIxoh+xYBOqxzJgsEpRY1HGVLjmw+i2Vtt7PooDJCLiPRNh2lQ4KZ/UEbKWWoiDES3HoF9+vbqxg=="
-  "resolved" "https://registry.npmjs.org/react-native-story/-/react-native-story-0.1.3.tgz"
-  "version" "0.1.3"
-
-"react-native-swipe-gestures@^1.0.3":
+"react-native-swipe-gestures@^1.0.5":
   "integrity" "sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw=="
   "resolved" "https://registry.npmjs.org/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz"
   "version" "1.0.5"
@@ -6245,16 +6056,7 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native-vector-icons@^6.6.0":
-  "integrity" "sha512-LKdwqDIGVxV1+4HnmFIPaok9hba3WyTQ7H2Wj5RFv54zIdIjixrAiV9VD/Ej9Mc5/rUhTpmMiIVF3LVmVYD7dg=="
-  "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-6.7.0.tgz"
-  "version" "6.7.0"
-  dependencies:
-    "lodash" "^4.17.15"
-    "prop-types" "^15.7.2"
-    "yargs" "^15.0.2"
-
-"react-native-video@^5.1.0-alpha8", "react-native-video@^5.1.1":
+"react-native-video@^5.1.1":
   "integrity" "sha512-zee8gRUrjPWRoZSEBiMebClqu1iAuCQNLjzqpmXFrRWEoJj7azM3BPqLQWJgsnfLiYUYGySeApC/G60THM5+tw=="
   "resolved" "https://registry.npmjs.org/react-native-video/-/react-native-video-5.1.1.tgz"
   "version" "5.1.1"
@@ -6263,7 +6065,7 @@
     "prop-types" "^15.7.2"
     "shaka-player" "^2.5.9"
 
-"react-native-webview@^10.10.2", "react-native-webview@^10.9.3":
+"react-native-webview@^10.10.2":
   "integrity" "sha512-98Dh7q1gEflicFZ8KNL3nK5XRjx50OZXqw87jHofVjKfjbK0LKmvI5X8ymgUMGg61JVgI3AF+g8qpDvqjgQsfg=="
   "resolved" "https://registry.npmjs.org/react-native-webview/-/react-native-webview-10.10.2.tgz"
   "version" "10.10.2"
@@ -6271,7 +6073,7 @@
     "escape-string-regexp" "2.0.0"
     "invariant" "2.2.4"
 
-"react-native@*", "react-native@>=0.40.0", "react-native@>=0.42.0", "react-native@>=0.60 <0.64", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@0.63.4":
+"react-native@*", "react-native@>=0.42.0", "react-native@>=0.60 <0.64", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@0.63.4":
   "integrity" "sha1-IhD91ATJSl+mtCPG3ob45IgQ7DY="
   "resolved" "https://registry.npm.taobao.org/react-native/download/react-native-0.63.4.tgz"
   "version" "0.63.4"
@@ -6304,43 +6106,6 @@
     "use-subscription" "^1.0.0"
     "whatwg-fetch" "^3.0.0"
 
-"react-native@0.62.1":
-  "integrity" "sha512-EhTmCYsLfIfyLAa6cuJBGgpTPj9LHiCS7fhCKMJZJ4p38+j4NOY4+Z40s/gbZIHr91j1DPNiomsBltQMUdd23g=="
-  "resolved" "https://registry.npmjs.org/react-native/-/react-native-0.62.1.tgz"
-  "version" "0.62.1"
-  dependencies:
-    "@babel/runtime" "^7.0.0"
-    "@react-native-community/cli" "^4.5.1"
-    "@react-native-community/cli-platform-android" "^4.5.1"
-    "@react-native-community/cli-platform-ios" "^4.5.0"
-    "abort-controller" "^3.0.0"
-    "anser" "^1.4.9"
-    "base64-js" "^1.1.2"
-    "connect" "^3.6.5"
-    "create-react-class" "^15.6.3"
-    "escape-string-regexp" "^1.0.5"
-    "eslint-plugin-relay" "1.4.1"
-    "event-target-shim" "^5.0.1"
-    "fbjs" "^1.0.0"
-    "fbjs-scripts" "^1.1.0"
-    "hermes-engine" "~0.4.0"
-    "invariant" "^2.2.4"
-    "jsc-android" "^245459.0.0"
-    "metro-babel-register" "0.58.0"
-    "metro-react-native-babel-transformer" "0.58.0"
-    "metro-source-map" "0.58.0"
-    "nullthrows" "^1.1.1"
-    "pretty-format" "^24.7.0"
-    "promise" "^7.1.1"
-    "prop-types" "^15.7.2"
-    "react-devtools-core" "^4.0.6"
-    "react-refresh" "^0.4.0"
-    "regenerator-runtime" "^0.13.2"
-    "scheduler" "0.17.0"
-    "stacktrace-parser" "^0.1.3"
-    "use-subscription" "^1.0.0"
-    "whatwg-fetch" "^3.0.0"
-
 "react-refresh@^0.4.0":
   "integrity" "sha1-lm8XUMGRZy524Wwu+laRUMxzq1M="
   "resolved" "https://registry.npm.taobao.org/react-refresh/download/react-refresh-0.4.3.tgz"
@@ -6356,19 +6121,10 @@
     "react-is" "^16.8.6"
     "scheduler" "^0.19.1"
 
-"react@*", "react@^16.13.1", "react@^16.2.0", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@>=15.0.0", "react@16.13.1":
+"react@*", "react@^16.13.1", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@>=15.0.0", "react@16.13.1":
   "integrity" "sha1-LoGIIvGpdDEiwGPWQQ2FweOv5I4="
   "resolved" "https://registry.npm.taobao.org/react/download/react-16.13.1.tgz"
   "version" "16.13.1"
-  dependencies:
-    "loose-envify" "^1.1.0"
-    "object-assign" "^4.1.1"
-    "prop-types" "^15.6.2"
-
-"react@16.11.0":
-  "integrity" "sha512-M5Y8yITaLmU0ynd0r1Yvfq98Rmll6q8AxaEe88c8e7LxO8fZ2cNgmFt0aGAS9wzf1Ao32NKXtCl+/tVVtkxq6g=="
-  "resolved" "https://registry.npmjs.org/react/-/react-16.11.0.tgz"
-  "version" "16.11.0"
   dependencies:
     "loose-envify" "^1.1.0"
     "object-assign" "^4.1.1"
@@ -6701,14 +6457,6 @@
   "integrity" "sha1-Tz4u0sGn1laB9MhU+oxaHMtA8ZY="
   "resolved" "https://registry.npm.taobao.org/scheduler/download/scheduler-0.19.1.tgz"
   "version" "0.19.1"
-  dependencies:
-    "loose-envify" "^1.1.0"
-    "object-assign" "^4.1.1"
-
-"scheduler@0.17.0":
-  "integrity" "sha512-7rro8Io3tnCPuY4la/NuI5F2yfESpnfZyT6TtkXnSWVkcu0BCDJ+8gk5ozUaFaxpIyNuWAPXrH0yFcSi28fnDA=="
-  "resolved" "https://registry.npmjs.org/scheduler/-/scheduler-0.17.0.tgz"
-  "version" "0.17.0"
   dependencies:
     "loose-envify" "^1.1.0"
     "object-assign" "^4.1.1"
@@ -7911,7 +7659,7 @@
     "y18n" "^4.0.0"
     "yargs-parser" "^15.0.1"
 
-"yargs@^15.0.2", "yargs@^15.1.0", "yargs@^15.4.1":
+"yargs@^15.1.0", "yargs@^15.4.1":
   "integrity" "sha1-DYehbeAa7p2L7Cv7909nhRcw9Pg="
   "resolved" "https://registry.npm.taobao.org/yargs/download/yargs-15.4.1.tgz"
   "version" "15.4.1"
