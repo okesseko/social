@@ -41,20 +41,15 @@ const Story = (props: Props) => {
         <Video
           source={{uri: url}}
           paused={props.pause || props.isNewStory}
-          onLoad={item => {
+          onLoad={(item) => {
             const {width, height} = item.naturalSize;
             const heightScaled = height * (ScreenWidth / width);
             let isPortrait = height > width;
             setIsPortation(height > width);
             setHeightScaled(heightScaled);
-            if(props.onVideoLoaded)
-            props.onVideoLoaded(item);
+            if (props.onVideoLoaded) props.onVideoLoaded(item);
           }}
-          style={
-            isPortation
-              ? [styles.contentVideoPortation, {height: heightScaled}]
-              : [styles.contentVideo, {height: heightScaled}]
-          }
+          style={styles.content}
           resizeMode={'contain'}
         />
       )}

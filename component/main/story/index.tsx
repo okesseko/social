@@ -8,7 +8,9 @@ import {
   TouchableOpacity,
   View,
 } from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import {StoriesType} from './src';
+import AddNewStory from './src/addNewStory';
 
 const {CubeNavigationHorizontal} = require('react-native-3dcube-navigation');
 
@@ -16,6 +18,7 @@ import StoryContainer from './src/StoryContainer';
 
 interface Props {
   data: StoriesType[];
+  setFile:any;
   containerAvatarStyle?: any;
   avatarStyle?: any;
   titleStyle?: any;
@@ -24,6 +27,7 @@ interface Props {
 
 const Stories = (props: Props) => {
   const [isModelOpen, setModel] = useState(false);
+  const [isAddNewStory, setNewStory] = useState(false);
   const [currentUserIndex, setCurrentUserIndex] = useState(0);
   const [currentScrollValue, setCurrentScrollValue] = useState(0);
   const modalScroll = useRef(null);
@@ -78,27 +82,55 @@ const Stories = (props: Props) => {
   };
   return (
     <View style={styles.container}>
-      <FlatList
-        data={props.data}
-        horizontal
-        keyExtractor={(item) => item.title as any}
-        renderItem={({item, index}) => (
-          <View style={styles.boxStory}>
-            <TouchableOpacity onPress={() => onStorySelect(index)}>
+      <View style={{flexDirection: 'row'}}>
+        <View style={styles.boxStory}>
+          <TouchableOpacity onPress={() => setNewStory(true)}>
+            <Image
+              style={[
+                styles.circle,
+                props.avatarStyle,
+                {borderColor: 'white', backgroundColor: 'white'},
+              ]}
+              source={{
+                uri:
+                  'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Plus_symbol.svg/1200px-Plus_symbol.svg.png',
+              }}
+            />
+            <Text style={[styles.title, props.titleStyle]}>new story</Text>
+          </TouchableOpacity>
+        </View>
+        <FlatList
+          data={props.data}
+          horizontal
+          keyExtractor={(item) => item.title as any}
+          renderItem={({item, index}) => (
+            <View style={styles.boxStory}>
+              <TouchableOpacity onPress={() => onStorySelect(index)}>
                 <Image
                   style={[styles.circle, props.avatarStyle]}
                   source={{
-                    uri:
-                    item.profile,
+                    uri: item.profile,
                   }}
                 />
 
-              <Text style={[styles.title, props.titleStyle]}>{item.title}</Text>
-            </TouchableOpacity>
-          </View>
-        )}
-      />
-
+                <Text style={[styles.title, props.titleStyle]}>
+                  {item.title}
+                </Text>
+              </TouchableOpacity>
+            </View>
+          )}
+        />
+      </View>
+      <Modal
+        animationType="slide"
+        transparent={false}
+        visible={isAddNewStory}
+        style={styles.modal}
+        onRequestClose={() => setNewStory(false)}>
+        <SafeAreaView style={{flex: 1, backgroundColor: 'black'}}>
+          <AddNewStory close={setNewStory} setFile={props.setFile}/>
+        </SafeAreaView>
+      </Modal>
       <Modal
         animationType="slide"
         transparent={false}
@@ -142,9 +174,9 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
   },
   circle: {
-    alignSelf:'center',
-    width:50,
-    height:50,
+    alignSelf: 'center',
+    width: 50,
+    height: 50,
     borderWidth: 3,
     borderColor: 'red',
     borderRadius: 60,
@@ -153,8 +185,8 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   title: {
-    marginTop:3,
-    color:'white',
+    marginTop: 3,
+    color: 'white',
     fontSize: 15,
     textAlign: 'center',
   },

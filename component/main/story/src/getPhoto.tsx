@@ -9,15 +9,19 @@ import {
   Image,
   Platform,
   PermissionsAndroid,
+  Dimensions,
 } from 'react-native';
+import {colors} from 'react-native-elements';
 
 // Import Image Picker
 // import ImagePicker from 'react-native-image-picker';
 import {launchCamera, launchImageLibrary} from 'react-native-image-picker';
 import Video from 'react-native-video';
-const GetPhoto = () => {
+
+const GetPhoto = ({setFile, close}: any) => {
   const [filePath, setFilePath] = useState({});
-  const [type, setType] = useState('photo');
+  const [type, setType] = useState('image');
+  const [fileBuffer, setFileBuffer] = useState<any>();
   const requestCameraPermission = async () => {
     if (Platform.OS === 'android') {
       try {
@@ -70,16 +74,13 @@ const GetPhoto = () => {
       videoQuality: 'high',
       durationLimit: 10, //Video max duration in seconds
       saveToPhotos: true,
-      includeBase64: true,
     };
-    setType(type);
+    setType(type === 'photo' ? 'image' : 'video');
     let isCameraPermitted = await requestCameraPermission();
     let isStoragePermitted = await requestExternalWritePermission();
     if (isCameraPermitted && isStoragePermitted) {
       // @ts-ignore
       launchCamera(options, (response) => {
-        console.warn('Response = ', response.assets[0]);
-
         if (response.didCancel) {
           console.warn('User cancelled camera picker');
           return;
@@ -90,7 +91,7 @@ const GetPhoto = () => {
           console.warn('Permission not satisfied');
           return;
         } else if (response.errorCode == 'others') {
-            console.warn('error');
+          console.warn('error');
           return;
         }
         // @ts-ignore
@@ -109,6 +110,10 @@ const GetPhoto = () => {
         console.log('fileName -> ', response.fileName);
         // @ts-ignore
         setFilePath(response.assets[0]);
+        setFileBuffer({
+          type: type === 'photo' ? 'image' : 'video',
+          uri: response.assets[0].uri,
+        });
       });
     }
   };
@@ -116,12 +121,9 @@ const GetPhoto = () => {
   const chooseFile = (type) => {
     let options = {
       mediaType: type,
-      includeBase64: true,
     };
-    setType(type);
     // @ts-ignore
     launchImageLibrary(options, (response) => {
-      console.log('Response = ', response);
       if (response.didCancel) {
         console.warn('User cancelled camera picker');
         return;
@@ -135,6 +137,8 @@ const GetPhoto = () => {
         console.warn('error');
         return;
       }
+
+      setType((response.assets[0] as any).type ? 'image' : 'video');
       // @ts-ignore
       console.log('base64 -> ', response.base64);
       // @ts-ignore
@@ -150,61 +154,66 @@ const GetPhoto = () => {
       // @ts-ignore
       console.log('fileName -> ', response.fileName);
       setFilePath(response.assets[0]);
+      setFileBuffer({
+        type: (response.assets[0] as any).type ? 'image' : 'video',
+        uri: response.assets[0].uri,
+      });
     });
   };
-
   return (
-    <SafeAreaView style={{flex: 1}}>
-      <Text style={styles.titleText}>
-        Example of Image Picker in React Native
-      </Text>
-      <View style={styles.container}>
+    <View style={styles.container}>
+      {type === 'image' ? (
         <Image
-          source={{
-            uri: 'data:image/jpeg;base64,' + (filePath as any).base64,
-          }}
+          source={{uri: (filePath as any).uri}}
           style={styles.imageStyle}
+          resizeMode="contain"
         />
-
-        {type === 'photo' ? (
-          <Image
-            source={{uri: (filePath as any).uri}}
-            style={styles.imageStyle}
-          />
-        ) : (
-          <Video
-            source={{uri: (filePath as any).uri}}
-            style={styles.imageStyle}
-            resizeMode={'contain'}
-          />
-        )}
-        <Text style={styles.textStyle}>{(filePath as any).uri}</Text>
+      ) : (
+        <Video
+          source={{uri: (filePath as any).uri}}
+          style={styles.imageStyle}
+          resizeMode="cover"
+        />
+      )}
+      {fileBuffer && (
         <TouchableOpacity
           activeOpacity={0.5}
-          style={styles.buttonStyle}
-          onPress={() => captureImage('photo')}>
-          <Text style={styles.textStyle}>Launch Camera for Image</Text>
+          style={{
+            borderColor: '#FF8484',
+            borderWidth: 2,
+            padding: 5,
+            marginBottom: 100,
+            width: 100,
+            justifyContent: 'center',
+          }}
+          onPress={() => {
+            setFile(fileBuffer);
+            close(false);
+          }}>
+          <Text style={[styles.textStyle, {color: '#FF8484'}]}>Comfirm</Text>
         </TouchableOpacity>
+      )}
+      <View style={{position: 'absolute', bottom: 0, flexDirection: 'row'}}>
         <TouchableOpacity
           activeOpacity={0.5}
           style={styles.buttonStyle}
           onPress={() => captureImage('video')}>
-          <Text style={styles.textStyle}>Launch Camera for Video</Text>
+          <Text style={styles.textStyle}>Camara Video</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.5}
           style={styles.buttonStyle}
-          onPress={() => chooseFile('photo')}>
-          <Text style={styles.textStyle}>Choose Image</Text>
+          onPress={() => captureImage('photo')}>
+          <Text style={styles.textStyle}>Camara Image</Text>
         </TouchableOpacity>
         <TouchableOpacity
           activeOpacity={0.5}
           style={styles.buttonStyle}
-          onPress={() => chooseFile('video')}>
-          <Text style={styles.textStyle}>Choose Video</Text>
+          onPress={() => chooseFile('mixed')}>
+          <Text style={styles.textStyle}>Library</Text>
         </TouchableOpacity>
       </View>
-    </SafeAreaView>
+    </View>
   );
 };
 
@@ -213,8 +222,7 @@ export default GetPhoto;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    padding: 10,
-    backgroundColor: '#fff',
+    width: '100%',
     alignItems: 'center',
   },
   titleText: {
@@ -226,22 +234,21 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     padding: 10,
-    color: 'black',
+    color: 'white',
     textAlign: 'center',
   },
   buttonStyle: {
-    alignItems: 'center',
-    backgroundColor: '#DDDDDD',
+    borderColor: 'white',
+    borderWidth: 2,
     padding: 5,
-    marginVertical: 10,
-    width: 250,
+    marginHorizontal: 10,
+    marginBottom: 10,
+    width: 100,
+    justifyContent: 'center',
   },
   imageStyle: {
-    borderWidth: 1,
-    borderColor: 'black',
-    borderStyle: 'solid',
-    width: 200,
-    height: 200,
-    margin: 5,
+    flex: 1,
+    width: '100%',
+    backgroundColor: 'black',
   },
 });
