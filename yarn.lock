@@ -927,7 +927,6 @@
     "jest-resolve" "^26.6.2"
     "jest-util" "^26.6.2"
     "jest-worker" "^26.6.2"
-    "node-notifier" "^8.0.0"
     "slash" "^3.0.0"
     "source-map" "^0.6.0"
     "string-length" "^4.0.1"
@@ -1178,6 +1177,11 @@
   "integrity" "sha1-5Csb7xLSQVQRUZ/VKOZLWTsTY9w="
   "resolved" "https://registry.npm.taobao.org/@react-native-community/eslint-plugin/download/@react-native-community/eslint-plugin-1.1.0.tgz"
   "version" "1.1.0"
+
+"@react-native-community/toolbar-android@^0.1.0-rc.1", "@react-native-community/toolbar-android@^0.1.0-rc.2":
+  "integrity" "sha512-UCblqsitOcoYxVc6QzcaqCKogeRnePPMw7cbGvW5GI/GXIwQel8Kge9d910W3MUPUzw3pFzhIZVug6U3W067Pg=="
+  "resolved" "https://registry.npmjs.org/@react-native-community/toolbar-android/-/toolbar-android-0.1.0-rc.2.tgz"
+  "version" "0.1.0-rc.2"
 
 "@react-navigation/bottom-tabs@^5.11.8":
   "integrity" "sha1-CvjVhZsa14G92G6CNs6u1g3DVf4="
@@ -2432,7 +2436,7 @@
     "js-yaml" "^3.13.1"
     "parse-json" "^4.0.0"
 
-"create-react-class@^15.6.3":
+"create-react-class@^15.6.0", "create-react-class@^15.6.3":
   "integrity" "sha512-QZv4sFWG9S5RUvkTYWbflxeZX+JG7Cz0Tn33rQBJ+WFQTqTfUTjMjiv9tnfXazjsO5r0KhPs+AqCjyrQX6h2ng=="
   "resolved" "https://registry.npmjs.org/create-react-class/-/create-react-class-15.7.0.tgz"
   "version" "15.7.0"
@@ -2675,6 +2679,11 @@
   "resolved" "https://registry.npm.taobao.org/electron-to-chromium/download/electron-to-chromium-1.3.675.tgz"
   "version" "1.3.675"
 
+"eme-encryption-scheme-polyfill@^2.0.1":
+  "integrity" "sha512-44CNFMsqzHdKHrzWxlS7xZ8KUHn5XutBqpmCuWzNIynmAyFInHrrD3ozv/RvK9ZhgV6QY6Easx8EWAmxteNodg=="
+  "resolved" "https://registry.npmjs.org/eme-encryption-scheme-polyfill/-/eme-encryption-scheme-polyfill-2.0.3.tgz"
+  "version" "2.0.3"
+
 "emittery@^0.7.1":
   "integrity" "sha1-JVlZCOE68PVnSrQZOW4vs5TN+oI="
   "resolved" "https://registry.npm.taobao.org/emittery/download/emittery-0.7.2.tgz"
@@ -2797,6 +2806,11 @@
   "resolved" "https://registry.npm.taobao.org/escape-string-regexp/download/escape-string-regexp-4.0.0.tgz"
   "version" "4.0.0"
 
+"escape-string-regexp@2.0.0":
+  "integrity" "sha512-UpzcLCXolUWcNu5HtVMHYdXJjArjsF9C0aNnquZYY4uW/Vu0miy5YoWvbV345HauVvcAUnpRuhMMcqTcGOY2+w=="
+  "resolved" "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-2.0.0.tgz"
+  "version" "2.0.0"
+
 "escodegen@^1.14.1":
   "integrity" "sha1-TnuB+6YVgdyXWC7XjKt/Do1j9QM="
   "resolved" "https://registry.npm.taobao.org/escodegen/download/escodegen-1.14.3.tgz"
@@ -2806,7 +2820,6 @@
     "estraverse" "^4.2.0"
     "esutils" "^2.0.2"
     "optionator" "^0.8.1"
-    "source-map" "~0.6.1"
   optionalDependencies:
     "source-map" "~0.6.1"
 
@@ -3736,7 +3749,7 @@
     "has" "^1.0.3"
     "side-channel" "^1.0.4"
 
-"invariant@^2.2.4":
+"invariant@^2.2.4", "invariant@2.2.4":
   "integrity" "sha1-YQ88ksk1nOHbYW5TgAjSP/NRWOY="
   "resolved" "https://registry.npm.taobao.org/invariant/download/invariant-2.2.4.tgz"
   "version" "2.2.4"
@@ -4172,7 +4185,6 @@
     "@jest/types" "^24.9.0"
     "anymatch" "^2.0.0"
     "fb-watchman" "^2.0.0"
-    "fsevents" "^1.2.7"
     "graceful-fs" "^4.1.15"
     "invariant" "^2.2.4"
     "jest-serializer" "^24.9.0"
@@ -4194,7 +4206,6 @@
     "@types/node" "*"
     "anymatch" "^3.0.3"
     "fb-watchman" "^2.0.0"
-    "fsevents" "^2.1.2"
     "graceful-fs" "^4.2.4"
     "jest-regex-util" "^26.0.0"
     "jest-serializer" "^26.6.2"
@@ -4635,8 +4646,6 @@
   "integrity" "sha1-NzaitCi4e72gzIO1P6PWM6NcKug="
   "resolved" "https://registry.npm.taobao.org/jsonfile/download/jsonfile-2.4.0.tgz"
   "version" "2.4.0"
-  dependencies:
-    "graceful-fs" "^4.1.6"
   optionalDependencies:
     "graceful-fs" "^4.1.6"
 
@@ -4644,8 +4653,6 @@
   "integrity" "sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss="
   "resolved" "https://registry.npm.taobao.org/jsonfile/download/jsonfile-4.0.0.tgz"
   "version" "4.0.0"
-  dependencies:
-    "graceful-fs" "^4.1.6"
   optionalDependencies:
     "graceful-fs" "^4.1.6"
 
@@ -4671,6 +4678,11 @@
   dependencies:
     "array-includes" "^3.1.2"
     "object.assign" "^4.1.2"
+
+"keymirror@^0.1.1":
+  "integrity" "sha1-kYiJ6hP40KQufFVyUO7nE63JXDU="
+  "resolved" "https://registry.npmjs.org/keymirror/-/keymirror-0.1.1.tgz"
+  "version" "0.1.1"
 
 "kind-of@^1.1.0":
   "integrity" "sha1-FAo9LUGjbS78+pN3tiwk+ElaXEQ="
@@ -4710,8 +4722,6 @@
   "integrity" "sha1-QIhDO0azsbolnXh4XY6W9zugJDk="
   "resolved" "https://registry.npm.taobao.org/klaw/download/klaw-1.3.1.tgz"
   "version" "1.3.1"
-  dependencies:
-    "graceful-fs" "^4.1.9"
   optionalDependencies:
     "graceful-fs" "^4.1.9"
 
@@ -6016,7 +6026,7 @@
     "kleur" "^3.0.3"
     "sisteransi" "^1.0.5"
 
-"prop-types@^15.6.1", "prop-types@^15.6.2", "prop-types@^15.7.2":
+"prop-types@^15.5.10", "prop-types@^15.6.1", "prop-types@^15.6.2", "prop-types@^15.7.2":
   "integrity" "sha1-UsQedbjIfnK52TYOAga5ncv/psU="
   "resolved" "https://registry.npm.taobao.org/prop-types/download/prop-types-15.7.2.tgz"
   "version" "15.7.2"
@@ -6094,6 +6104,18 @@
   "resolved" "https://registry.npm.taobao.org/react-is/download/react-is-17.0.1.tgz"
   "version" "17.0.1"
 
+"react-native-3dcube-navigation@^1.0.4":
+  "integrity" "sha512-9BGdJDcouWi8a/KqajCOm+gHayXfFhodq8G/mgSMp0363QyZAlP7iPtYjL6mkaUcR8JAjzgCREh4CHAAMJmnhw=="
+  "resolved" "https://registry.npmjs.org/react-native-3dcube-navigation/-/react-native-3dcube-navigation-1.0.4.tgz"
+  "version" "1.0.4"
+  dependencies:
+    "react" "^16.2.0"
+
+"react-native-clean-project@^3.6.4":
+  "integrity" "sha512-bQij/EktcOb9VnEUg+UaC4bePWlGeqsLk0dyCJyQmHc4s1Cw7lo+cnnFVbuyFnjT0sEMSkDvDF0/rLD6437XMw=="
+  "resolved" "https://registry.npmjs.org/react-native-clean-project/-/react-native-clean-project-3.6.4.tgz"
+  "version" "3.6.4"
+
 "react-native-elements@^3.2.0":
   "integrity" "sha1-CICAGtW+bR2phItXZZsPYrjrufQ="
   "resolved" "https://registry.npm.taobao.org/react-native-elements/download/react-native-elements-3.2.0.tgz"
@@ -6109,10 +6131,30 @@
     "react-native-ratings" "^7.3.0"
     "react-native-size-matters" "^0.3.1"
 
+"react-native-image-picker@^4.0.3":
+  "integrity" "sha512-S4a1jE4fAPDzmah/7OVTEAXGz1/wlGyClU+spygmek5rVLERR5BgwnkX3tLP/UvMQbfdPZNUbnH0hEe7su2AZg=="
+  "resolved" "https://registry.npmjs.org/react-native-image-picker/-/react-native-image-picker-4.0.3.tgz"
+  "version" "4.0.3"
+
 "react-native-iphone-x-helper@^1.3.0", "react-native-iphone-x-helper@^1.3.1":
   "integrity" "sha1-IMYD6aDnZf1vlzlmOL3rDlpgsBA="
   "resolved" "https://registry.npm.taobao.org/react-native-iphone-x-helper/download/react-native-iphone-x-helper-1.3.1.tgz"
   "version" "1.3.1"
+
+"react-native-modalbox@^1.7.1":
+  "integrity" "sha512-Jqn12MKQaT5OSb1uMAEeDQF02xHS+WWdgKl55ecoIknrDy+FIoC3fXHMEoRZH6agADDg9eVBqx8w+P7+EwXTbQ=="
+  "resolved" "https://registry.npmjs.org/react-native-modalbox/-/react-native-modalbox-1.7.1.tgz"
+  "version" "1.7.1"
+  dependencies:
+    "create-react-class" "^15.6.0"
+    "prop-types" "^15.5.10"
+
+"react-native-modalbox@^2.0.2":
+  "integrity" "sha512-uSuoZ+siPPNqWGyw8NXhA/Aots7mOx2+qijFoeovequY0kczZEPZDd0ARHbzg+1cE3H3AATJEwGdkVA8lUxs0g=="
+  "resolved" "https://registry.npmjs.org/react-native-modalbox/-/react-native-modalbox-2.0.2.tgz"
+  "version" "2.0.2"
+  dependencies:
+    "prop-types" "^15.5.10"
 
 "react-native-paper@^4.7.2", "react-native-paper@>= 3.0.0":
   "integrity" "sha1-pA0dqHr1sDDUW1JTE81wPUkIdv8="
@@ -6159,6 +6201,18 @@
     "prop-types" "^15.6.1"
     "react-addons-shallow-compare" "15.6.2"
 
+"react-native-stories-media@^0.0.7":
+  "integrity" "sha512-oWlEIQqDMZVb+WHDmYXvXWjc+Ebde9FqO+Ym7yC29Fqou2hjjPPmY9y61hjoOXAVId1L8CL7Lpv9p+oabVlIXQ=="
+  "resolved" "https://registry.npmjs.org/react-native-stories-media/-/react-native-stories-media-0.0.7.tgz"
+  "version" "0.0.7"
+  dependencies:
+    "react-native-3dcube-navigation" "^1.0.4"
+    "react-native-modalbox" "^1.7.1"
+    "react-native-swipe-gestures" "^1.0.3"
+    "react-native-vector-icons" "^6.6.0"
+    "react-native-video" "^5.1.0-alpha8"
+    "react-native-webview" "^10.9.3"
+
 "react-native-stories-view@^1.0.7":
   "integrity" "sha512-ONY+bsR/luqTFuwgfgRKGOL1xXBghUv2od6zACyw/LBq7In/wz4t9DEIwcJ5DnA3guKgC7jNMFBVe8avzcr/Kg=="
   "resolved" "https://registry.npmjs.org/react-native-stories-view/-/react-native-stories-view-1.0.7.tgz"
@@ -6166,6 +6220,16 @@
   dependencies:
     "react" "16.11.0"
     "react-native" "0.62.1"
+
+"react-native-story@^0.1.3":
+  "integrity" "sha512-C+qJWp3mD8ZIxoh+xYBOqxzJgsEpRY1HGVLjmw+i2Vtt7PooDJCLiPRNh2lQ4KZ/UEbKWWoiDES3HoF9+vbqxg=="
+  "resolved" "https://registry.npmjs.org/react-native-story/-/react-native-story-0.1.3.tgz"
+  "version" "0.1.3"
+
+"react-native-swipe-gestures@^1.0.3":
+  "integrity" "sha512-Ns7Bn9H/Tyw278+5SQx9oAblDZ7JixyzeOczcBK8dipQk2pD7Djkcfnf1nB/8RErAmMLL9iXgW0QHqiII8AhKw=="
+  "resolved" "https://registry.npmjs.org/react-native-swipe-gestures/-/react-native-swipe-gestures-1.0.5.tgz"
+  "version" "1.0.5"
 
 "react-native-vector-icons@*", "react-native-vector-icons@^8.1.0", "react-native-vector-icons@>= 6.0.0", "react-native-vector-icons@>7.0.0":
   "integrity" "sha1-6O4rF7xNn2Ntocb2f+7o4qhQw9g="
@@ -6181,7 +6245,33 @@
     "prop-types" "^15.7.2"
     "yargs" "^16.1.1"
 
-"react-native@*", "react-native@>=0.42.0", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@0.63.4":
+"react-native-vector-icons@^6.6.0":
+  "integrity" "sha512-LKdwqDIGVxV1+4HnmFIPaok9hba3WyTQ7H2Wj5RFv54zIdIjixrAiV9VD/Ej9Mc5/rUhTpmMiIVF3LVmVYD7dg=="
+  "resolved" "https://registry.npmjs.org/react-native-vector-icons/-/react-native-vector-icons-6.7.0.tgz"
+  "version" "6.7.0"
+  dependencies:
+    "lodash" "^4.17.15"
+    "prop-types" "^15.7.2"
+    "yargs" "^15.0.2"
+
+"react-native-video@^5.1.0-alpha8", "react-native-video@^5.1.1":
+  "integrity" "sha512-zee8gRUrjPWRoZSEBiMebClqu1iAuCQNLjzqpmXFrRWEoJj7azM3BPqLQWJgsnfLiYUYGySeApC/G60THM5+tw=="
+  "resolved" "https://registry.npmjs.org/react-native-video/-/react-native-video-5.1.1.tgz"
+  "version" "5.1.1"
+  dependencies:
+    "keymirror" "^0.1.1"
+    "prop-types" "^15.7.2"
+    "shaka-player" "^2.5.9"
+
+"react-native-webview@^10.10.2", "react-native-webview@^10.9.3":
+  "integrity" "sha512-98Dh7q1gEflicFZ8KNL3nK5XRjx50OZXqw87jHofVjKfjbK0LKmvI5X8ymgUMGg61JVgI3AF+g8qpDvqjgQsfg=="
+  "resolved" "https://registry.npmjs.org/react-native-webview/-/react-native-webview-10.10.2.tgz"
+  "version" "10.10.2"
+  dependencies:
+    "escape-string-regexp" "2.0.0"
+    "invariant" "2.2.4"
+
+"react-native@*", "react-native@>=0.40.0", "react-native@>=0.42.0", "react-native@>=0.60 <0.64", "react-native@>=0.62.0-rc.0 <0.64.0", "react-native@0.63.4":
   "integrity" "sha1-IhD91ATJSl+mtCPG3ob45IgQ7DY="
   "resolved" "https://registry.npm.taobao.org/react-native/download/react-native-0.63.4.tgz"
   "version" "0.63.4"
@@ -6266,7 +6356,7 @@
     "react-is" "^16.8.6"
     "scheduler" "^0.19.1"
 
-"react@*", "react@^16.13.1", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@>=15.0.0", "react@16.13.1":
+"react@*", "react@^16.13.1", "react@^16.2.0", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@>=15.0.0", "react@16.13.1":
   "integrity" "sha1-LoGIIvGpdDEiwGPWQQ2FweOv5I4="
   "resolved" "https://registry.npm.taobao.org/react/download/react-16.13.1.tgz"
   "version" "16.13.1"
@@ -6725,6 +6815,13 @@
   "integrity" "sha1-fpWsskqpL1iF4KvvW6ExMw1K5oM="
   "resolved" "https://registry.npm.taobao.org/setprototypeof/download/setprototypeof-1.1.1.tgz"
   "version" "1.1.1"
+
+"shaka-player@^2.5.9":
+  "integrity" "sha512-PAoeNLUQ/hT/9dY7QvNFgIiDtXSqbYVFuXXtLHh7ytVVqTvI/p4HLwfYShiR+sE/sbsDOr9D5l9D/ztLPhxgtw=="
+  "resolved" "https://registry.npmjs.org/shaka-player/-/shaka-player-2.5.22.tgz"
+  "version" "2.5.22"
+  dependencies:
+    "eme-encryption-scheme-polyfill" "^2.0.1"
 
 "shebang-command@^1.2.0":
   "integrity" "sha1-RKrGW2lbAzmJaMOfNj/uXer98eo="
@@ -7814,7 +7911,7 @@
     "y18n" "^4.0.0"
     "yargs-parser" "^15.0.1"
 
-"yargs@^15.1.0", "yargs@^15.4.1":
+"yargs@^15.0.2", "yargs@^15.1.0", "yargs@^15.4.1":
   "integrity" "sha1-DYehbeAa7p2L7Cv7909nhRcw9Pg="
   "resolved" "https://registry.npm.taobao.org/yargs/download/yargs-15.4.1.tgz"
   "version" "15.4.1"

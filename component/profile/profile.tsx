@@ -65,12 +65,12 @@ const Profile = ({route}: any) => {
             rounded
             size="large"
             source={{
-              uri: users[profileIndex ? profileIndex : 1].image,
+              uri: users[profileIndex !== undefined ? profileIndex : 1].image,
             }}
           />
           <View>
             <Text style={{color: 'white', marginRight: 20, fontSize: 30}}>
-              {users[profileIndex ? profileIndex : 1].name}
+              {users[profileIndex !== undefined ? profileIndex : 1].name}
             </Text>
           </View>
         </View>
@@ -79,25 +79,23 @@ const Profile = ({route}: any) => {
             flexDirection: 'column',
             marginHorizontal: 20,
           }}>
-          {users[profileIndex ? profileIndex : 1].text.map((text, index) => (
-            <Text
-              key={index}
-              style={{
-                color: 'white',
-                marginLeft: 10,
-                fontSize: 14,
-                lineHeight: 24,
-              }}>
-              {text}
-            </Text>
-          ))}
+          {users[profileIndex !== undefined ? profileIndex : 1].text.map(
+            (text, index) => (
+              <Text
+                key={index}
+                style={{
+                  color: 'white',
+                  marginLeft: 10,
+                  fontSize: 14,
+                  lineHeight: 24,
+                }}>
+                {text}
+              </Text>
+            ),
+          )}
         </View>
         <Posts
-          havePost={
-            profileIndex === 3 || profileIndex === 4
-              ? true
-              : false
-          }
+          havePost={profileIndex === 3 || profileIndex === 4 ? true : false}
           postIndex={profileIndex === 3 ? 0 : 1}
         />
       </ScrollView>
