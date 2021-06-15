@@ -12,7 +12,7 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {StoriesType} from './src';
 import AddNewStory from './src/addNewStory';
 
-const {CubeNavigationHorizontal} = require('react-native-3dcube-navigation');
+import {CubeNavigationHorizontal} from 'react-native-3dcube-navigation' ;
 
 import StoryContainer from './src/StoryContainer';
 

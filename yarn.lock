@@ -5955,6 +5955,13 @@
   "resolved" "https://registry.npm.taobao.org/react-is/download/react-is-17.0.1.tgz"
   "version" "17.0.1"
 
+"react-native-3dcube-navigation@^1.0.4":
+  "integrity" "sha512-9BGdJDcouWi8a/KqajCOm+gHayXfFhodq8G/mgSMp0363QyZAlP7iPtYjL6mkaUcR8JAjzgCREh4CHAAMJmnhw=="
+  "resolved" "https://registry.npmjs.org/react-native-3dcube-navigation/-/react-native-3dcube-navigation-1.0.4.tgz"
+  "version" "1.0.4"
+  dependencies:
+    "react" "^16.2.0"
+
 "react-native-clean-project@^3.6.4":
   "integrity" "sha512-bQij/EktcOb9VnEUg+UaC4bePWlGeqsLk0dyCJyQmHc4s1Cw7lo+cnnFVbuyFnjT0sEMSkDvDF0/rLD6437XMw=="
   "resolved" "https://registry.npmjs.org/react-native-clean-project/-/react-native-clean-project-3.6.4.tgz"
@@ -6121,7 +6128,7 @@
     "react-is" "^16.8.6"
     "scheduler" "^0.19.1"
 
-"react@*", "react@^16.13.1", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@>=15.0.0", "react@16.13.1":
+"react@*", "react@^16.13.1", "react@^16.2.0", "react@^16.3.0", "react@^16.8.0 || ^17.0.0", "react@>=15.0.0", "react@16.13.1":
   "integrity" "sha1-LoGIIvGpdDEiwGPWQQ2FweOv5I4="
   "resolved" "https://registry.npm.taobao.org/react/download/react-16.13.1.tgz"
   "version" "16.13.1"
